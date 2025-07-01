@@ -8,7 +8,7 @@ import traceback
 app = FastAPI(title="API de Predicción de ABV")
 
 # 2. Cargamos el pipeline entrenado
-pipeline = joblib.load("xgb_end_model.pkl")  # asegúrate de tener este archivo junto a app.py
+pipeline = joblib.load("xgb_end_model.pkl")
 
 # 3. Definición de esquema de entrada
 class MostoData(BaseModel):
